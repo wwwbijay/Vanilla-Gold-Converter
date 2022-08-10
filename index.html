@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Converter</title>
+  </head>
+  <body>
+
+    <main id="app">
+      <section class="tola-gram-conversion sec">
+        <header>
+          <h1 class="heading">Gold <span>Converter</span></h1>
+        </header>
+
+        <div class="row mb-3">
+          <div class="col col-md-12 d-flex input_wrap">
+            <input
+              id="source"
+              type="number"
+              class="form-control"
+              value="1"
+             
+            />
+            <select id="source_unit" class="form-select">
+              <option value="chatak">Chatak</option>
+              <option value="tola" selected>Tola</option>
+              <option value="gram">Gram</option>
+              <option value="lal">lal</option>
+            </select>
+          </div>
+          <!--.col ends-->
+          
+        </div>
+        <!--.row ends-->
+
+        <div class="row mb-3">
+          <div class="col col-md-12 d-flex input_wrap">
+           
+            <input
+              id="target"
+              class="form-control"
+              readonly
+              value="11.6638"
+         />
+            <select id="target_unit" class="form-select">
+              <option value="chatak">Chatak</option>
+              <option value="tola">Tola</option>
+              <option value="gram" selected>Gram</option>
+              <option value="lal">lal</option>
+            </select>
+          </div>
+          <!--.col ends-->
+        </div>
+      </section><!--.tola-gram-conversion ends-->
+
+    </main>
+    <!--#app ends-->
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
